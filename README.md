@@ -1,14 +1,14 @@
-# PISA: Task-Oriented Part Segmentation with Language Reasoning
+# InstructPart: Task-Oriented Part Segmentation with Instruction Reasoning
 
-This dataset contains annotated images and language instructions for task-oriented part segmetnation. The dataset is divided into three main folders: `all`, `train`, and `test`.
+This dataset contains annotated images and language instructions for task-oriented part segmentation. The dataset is divided into three main folders: `all`, `train`, and `test`.
 
 ## Download
-- [Goodle Drive](https://drive.google.com/drive/folders/1b876tX1wdy-jbyLvGSmZkAS4U5DuXlST?usp=sharing)
+- [Goodle Drive](https://drive.google.com/drive/folders/1b876tX1wdy-jbyLvGSmZkAS4U5DuXlST?usp=drive_link)
 
 ## Folder Structure
 
 ```plaintext
-pisa_part/PISA
+instructpart_part/InstructPart
 ├── all
 │   ├── data_all.json
 │   ├── images
@@ -73,17 +73,17 @@ pisa_part/PISA
 ## Example Usage
 ```python
 def read_my_data(instruction_id):
-    val_dataset = "PISA|test"
+    val_dataset = "InstructPart|test"
     base_image_dir = "xxx"
     splits = val_dataset.split("|")
     if len(splits) == 2:
             ds, split = splits
-    if ds == "PISA":
+    if ds == "InstructPart":
         images = glob.glob(
-            os.path.join(base_image_dir, "pisa_part", ds, split, "images", "*.jpg")
+            os.path.join(base_image_dir, "instructpart_part", ds, split, "images", "*.jpg")
         )
-    masks_path = os.path.join(base_image_dir, "pisa_part", ds, split, "masks")
-    json_path_reason_part = os.path.join(base_image_dir, "pisa_part", ds, split, "data_" + split +".json")
+    masks_path = os.path.join(base_image_dir, "instructpart_part", ds, split, "masks")
+    json_path_reason_part = os.path.join(base_image_dir, "instructpart_part", ds, split, "data_" + split +".json")
     reason_part_data = {}
     with open(json_path_reason_part, 'r') as file:
         data = json.load(file)
