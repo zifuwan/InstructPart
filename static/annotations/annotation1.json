@@ -1,0 +1,19 @@
+{
+    "image_path": "knife_000953.jpg",
+    "part_list": [
+        {
+            "object": "knife",
+            "part": "blade",
+            "affordance": "cut",
+            "action": "cut",
+            "instruction": [
+                "If I want to use the knife to cut the carrots, which part in the picture should be used?",
+                "Identify the part of the knife ideal for slicing the carrots.",
+                "Where is the blade of the knife in this image?",
+                "Where is the blade of the knife that can cut in this image?",
+                "blade of the knife",
+                "blade of the knife that can cut"
+            ]
+        }
+    ]
+}
