@@ -2,9 +2,9 @@
 <h1> InstructPart: Task-Oriented Part Segmentation with Instruction Reasoning
 </h1>
 
-Zifu Wan, Yaqi Xie, Ce Zhang, Zhiqiu Lin, Zihan Wang, Simon Stepputtis, Deva Ramanan, Katia Sycara</sup>
-
- Robotics Institute, Carnegie Mellon University
+Zifu Wan, Yaqi Xie, Ce Zhang, Zhiqiu Lin, Zihan Wang, Simon Stepputtis, Deva Ramanan, Katia Sycara  
+Robotics Institute, Carnegie Mellon University  
+ACL 2025 Main
 
 [![arXiv](https://img.shields.io/badge/arXiv-2404.04256-b31b1b.svg)](https://arxiv.org/abs/2404.04256) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
