@@ -1,11 +1,23 @@
-# InstructPart: Task-Oriented Part Segmentation with Instruction Reasoning
+<div align="center">
+<h1> InstructPart: Task-Oriented Part Segmentation with Instruction Reasoning
+</h1>
+
+Zifu Wan, Yaqi Xie, Ce Zhang, Zhiqiu Lin, Zihan Wang, Simon Stepputtis, Deva Ramanan, Katia Sycara</sup>
+
+ Robotics Institute, Carnegie Mellon University
+
+[![arXiv](https://img.shields.io/badge/arXiv-2404.04256-b31b1b.svg)](https://arxiv.org/abs/2404.04256) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+</div>
+
+## 👀 Introduction
 
 This dataset contains annotated images and language instructions for task-oriented part segmentation. The dataset is divided into three main folders: `all`, `train`, and `test`.
 
-## Download
+## 📦 Download
 - [Goodle Drive](https://drive.google.com/drive/folders/1b876tX1wdy-jbyLvGSmZkAS4U5DuXlST?usp=drive_link)
 
-## Folder Structure
+## ⏳ Folder Structure
 
 ```plaintext
 instructpart_part/InstructPart
@@ -38,13 +50,13 @@ instructpart_part/InstructPart
 └── README.md
 ```
 
-## Dataset Statistics
+## 📊 Dataset Statistics
 - Total samples: 2400
 - Training samples: 1800
     - The training set is further divided into 200, 600, 1200, 1800 samples. Specifically, starting with 200 samples, we gradually increase the number of training samples to 600, 1,200, and finally 1,800. Each increment includes all the previously used training samples.
 - Testing samples: 600
 
-## Annotation Structure
+## 💡 Annotation Structure
 ```json
 [
     {
@@ -70,7 +82,7 @@ instructpart_part/InstructPart
 ]
 ```
 
-## Example Usage
+## 🌰 Example Usage
 ```python
 def read_my_data(instruction_id):
     val_dataset = "InstructPart|test"
@@ -118,4 +130,27 @@ for idx in range(len(images_paths)):
     image_path = images_paths[idx]
     instruction = reason_part_data[os.path.basename(image_path)]
     image = Image.open(image_path).convert("RGB")
+```
+
+## 🙏 Acknowledgements
+
+Our model is adapted from [LISA](https://github.com/dvlab-research/LISA). Besides, we appreciate the free-licensed images from [Flickr website](https://www.flickr.com/) and [AGD20K](https://github.com/lhc1224/Cross-View-AG).
+
+## 📧 Contact
+
+If you have any questions, please  contact at [zifuw@andrew.cmu.edu](mailto:zifuw@andrew.cmu.edu).
+
+## 📌 BibTeX & Citation
+
+If you find this code useful, please consider citing our work:
+
+```bibtex
+@inproceedings{
+  wan2024instructpart,
+  title={InstructPart: Task-Oriented Part Segmentation with Instruction Reasoning},
+  author={Wan, Zifu and  Xie, Yaqi and Zhang, Ce and Lin, Zhiqiu and Wang, Zihan and Stepputtis, Simon and Ramanan, Deva and Sycara, Katia},
+  booktitle={The 63rd Annual Meeting of the Association for Computational Linguistics},
+  year={2025},
+  url={https://openreview.net/forum?id=IMEr4XgJSZ}
+}
 ```
