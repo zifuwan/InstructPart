@@ -6,7 +6,7 @@ Zifu Wan, Yaqi Xie, Ce Zhang, Zhiqiu Lin, Zihan Wang, Simon Stepputtis, Deva Ram
 Robotics Institute, Carnegie Mellon University  
 ACL 2025 Main
 
-[![arXiv](https://img.shields.io/badge/arXiv-2404.04256-b31b1b.svg)](https://arxiv.org/abs/2404.04256) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![arXiv](https://img.shields.io/badge/arXiv-2505.18291-b31b1b.svg)](https://arxiv.org/abs/2505.18291) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 </div>
 
@@ -16,6 +16,7 @@ This dataset contains annotated images and language instructions for task-orient
 
 ## 📦 Download
 - [Goodle Drive](https://drive.google.com/drive/folders/1b876tX1wdy-jbyLvGSmZkAS4U5DuXlST?usp=drive_link)
+- [Hugging Face](https://huggingface.co/datasets/zifuwan/InstructPart)
 
 ## ⏳ Folder Structure
 
